@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getSortedPostsData, PostData } from '@/lib/posts';
+import { getSortedPostsData, PostData } from '@/app/lib/posts';
 
 export default function BlogPage() {
   const allPostsData = getSortedPostsData();
