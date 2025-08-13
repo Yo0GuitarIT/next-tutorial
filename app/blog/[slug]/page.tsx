@@ -14,9 +14,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   return (
     <article>
       <h1>{postData.title}</h1>
-      <div>
-        {postData.date}
-      </div>
+      <div>{postData.date}</div>
       <hr />
       <MDXRemote source={postData.content} />
     </article>

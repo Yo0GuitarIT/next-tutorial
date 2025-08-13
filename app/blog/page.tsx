@@ -12,9 +12,7 @@ export default function BlogPage() {
           <li key={id}>
             <Link href={`/blog/${id}`}>{title}</Link>
             <br />
-            <small>
-              {date}
-            </small>
+            <small>{date}</small>
           </li>
         ))}
       </ul>

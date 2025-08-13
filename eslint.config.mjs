@@ -1,6 +1,7 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,7 +18,7 @@ const eslintConfig = [
   ),
   {
     plugins: {
-      prettier: require('eslint-plugin-prettier'),
+      prettier: eslintPluginPrettier,
     },
     rules: {
       'prettier/prettier': 'error', // Prettier 格式錯誤會顯示為 ESLint error

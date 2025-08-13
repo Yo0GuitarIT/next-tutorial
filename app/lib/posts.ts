@@ -45,7 +45,7 @@ export function getAllPostIds() {
 
   return fileNames.map((fileName) => {
     return {
-        slug: fileName.replace(/\.mdx$/, ''),
+      slug: fileName.replace(/\.mdx$/, ''),
     };
   });
 }
