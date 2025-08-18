@@ -6,10 +6,9 @@ interface BlogLayoutProps {
 
 function BlogLayout({ children }: BlogLayoutProps) {
   return (
-    <div>
-      <h1>Blog Page Layout</h1>
+    <>
       {children}
-    </div>
+    </>
   );
 }
 
