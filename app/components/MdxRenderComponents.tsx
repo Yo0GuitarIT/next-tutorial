@@ -8,6 +8,7 @@ type ListProps = ComponentPropsWithoutRef<'ul'>;
 type ListItemProps = ComponentPropsWithoutRef<'li'>;
 type AnchorProps = ComponentPropsWithoutRef<'a'>;
 type BlockquoteProps = ComponentPropsWithoutRef<'blockquote'>;
+type PreProps = ComponentPropsWithoutRef<'pre'>;
 
 const components = {
   h1: (props: HeadingProps) => <h1 className="mb-0 pt-12 font-medium" {...props} />,
@@ -55,6 +56,12 @@ const components = {
       </a>
     );
   },
+  pre: (props: PreProps) => (
+    <pre
+      className="mb-4 overflow-x-auto rounded-lg bg-zinc-100 py-4 dark:bg-zinc-800/80"
+      {...props}
+    />
+  ),
   code: ({ children, ...props }: ComponentPropsWithoutRef<'code'>) => {
     const codeHTML = highlight(children as string);
     return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;

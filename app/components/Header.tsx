@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className="flex items-center justify-between bg-gray-800 p-2 text-white">
+    <header className="flex items-center justify-between bg-gray-800  text-white">
       <Link href="/" className="text-2xl font-bold">
         {"Yo0's"} Blog
       </Link>
