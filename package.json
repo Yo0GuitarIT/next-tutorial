@@ -10,11 +10,15 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "gray-matter": "^4.0.3",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.4.6",
+    "@types/mdx": "^2.0.13",
     "next": "15.4.6",
     "next-mdx-remote": "^5.0.0",
     "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react-dom": "19.1.1",
+    "sugar-high": "^0.9.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
